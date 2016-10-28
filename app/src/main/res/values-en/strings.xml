@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NPay Demo</string>
+
+    <string name="title_activity_singlebilling">Single Billing</string>
+    <string name="title_activity_singlebilling_local">Single Billing Local</string>
+    <string name="title_activity_recurringbilling">Recurring Billing</string>
+    <string name="title_activity_recurringbilling_local">Recurring Billing Local</string>
+
+    <string name="popup_item_subscription">Subscribe</string>
+    <string name="popup_item_cancel">Cancel subscription</string>
+    <string name="popup_item_check">Get information</string>
+    <string name="popup_item_purchase">Buy</string>
+    <string name="popup_item_docs">Documentation</string>
+
+    <string name="tag_name_subscription">Name</string>
+    <string name="tag_description_sub">Description</string>
+    <string name="tag_country">Country</string>
+    <string name="tag_sku">Sku</string>
+    <string name="tag_type">Type</string>
+    <string name="consumable">Consumable</string>
+    <string name="no_consumable">Non consumable</string>
+
+    <string name="documentation">https://secure.npay.io/docs/en/</string>
+
+    <string name="client_secret">539159f1b102304be7c5f0f5ccf5389cca4810c33a3056a588d6684adb4e21b9</string>
+    <string name="keyword">TEST10</string>
+    <string name="media">inapp</string>
+</resources>

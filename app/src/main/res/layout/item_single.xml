@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/item_icon_subscription"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_coins_purchase"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tag_name_single"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tag_name_subscription"
+            android:gravity="center"
+            android:maxLines="2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/title_name_single"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLines="2"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tag_description_single"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tag_description_sub"
+            android:gravity="center"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/title_description_single"
+            android:gravity="center"
+            android:maxLines="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tag_sku"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tag_sku"
+            android:gravity="center"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/title_sku"
+            android:gravity="center"
+            android:maxLines="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tag_type"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tag_type"
+            android:gravity="center"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/title_type"
+            android:gravity="center"
+            android:maxLines="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

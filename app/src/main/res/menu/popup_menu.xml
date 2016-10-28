@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_create_subscription"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/popup_item_subscription"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_cancel_subscription"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/popup_item_cancel"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_check_subscription"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/popup_item_check"
+        android:visible="true"/>
+</menu>
