@@ -22,17 +22,8 @@ import java.util.List;
 import cz.msebera.android.httpclient.Header;
 
 /**
- * Created by Anselmo Hernández Bazaldúa. on 8/9/16.
- * ----------------------------------------------------------
- * Additional Information
- * ----------------------------------------------------------
  * Company name: Naranya Corp,
- * Company email: anselmo.hernandez@naranya.com,
- * Personal email: chemo.baza@gmail.com,
- * Phone: +520448119163771,
- * Skype: chemo.baza,
- * ----------------------------------------------------------
- * Happy Coding :)
+ * Company email: npaydevs@naranya.com
  */
 public class SingleBillingActivity extends BaseActivity {
     private RecyclerView recycler;
@@ -77,7 +68,7 @@ public class SingleBillingActivity extends BaseActivity {
         if( type == 0 ) {
             toolbar.setTitle(getString(R.string.title_activity_singlebilling));
 
-            new NPay.NPayBuilder().getSingleBillingServices(new OnSingleBillingServices() {
+            new NPay.NPayBuilder().getSingleBillingServices(this, new OnSingleBillingServices() {
 
                 @Override
                 public void getSingleBillingServicesResponse(String jsonResponse, List<Consumable> consumableList, List<NonConsumable> nonConsumableList) {

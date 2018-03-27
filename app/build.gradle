@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.naranya.npay.npaydemo"
         minSdkVersion 14
@@ -26,6 +26,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:recyclerview-v7:25.0.0'
-    compile 'com.naranya.npay:naranya-npay-sdk:2.0.1'
+    compile 'com.naranya.npay:naranya-npay-sdk:2018.02.03'
     testCompile 'junit:junit:4.12'
 }

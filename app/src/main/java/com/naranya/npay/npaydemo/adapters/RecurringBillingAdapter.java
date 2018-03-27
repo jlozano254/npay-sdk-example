@@ -29,17 +29,8 @@ import java.util.List;
 import cz.msebera.android.httpclient.Header;
 
 /**
- * Created by Anselmo Hernández Bazaldúa. on 8/9/16.
- * ----------------------------------------------------------
- * Additional Information
- * ----------------------------------------------------------
  * Company name: Naranya Corp,
- * Company email: anselmo.hernandez@naranya.com,
- * Personal email: chemo.baza@gmail.com,
- * Phone: +520448119163771,
- * Skype: chemo.baza,
- * ----------------------------------------------------------
- * Happy Coding :)
+ * Company email: npaydevs@naranya.com
  */
 public class RecurringBillingAdapter extends RecyclerView.Adapter<RecurringBillingAdapter.ViewHolder> implements PopupMenu.OnMenuItemClickListener {
     private Activity context;
@@ -135,6 +126,12 @@ public class RecurringBillingAdapter extends RecyclerView.Adapter<RecurringBilli
 
                     @Override
                     public void onDialogCancel() {}
+
+                    @Override
+                    public void onDialogSuccessfulSubscription() {}
+
+                    @Override
+                    public void onGrant(boolean status) {}
 
                     @Override
                     public void onSubscriptionCreatedResponse(SubscriptionCreatedResponse result, String jsonResponse) {

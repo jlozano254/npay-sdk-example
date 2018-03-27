@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.naranya.npay.NPay;
 import com.naranya.npay.interfaces.OnCheckout;
 import com.naranya.npay.models.checkout.NPayCheckoutResponse;
+import com.naranya.npay.models.checkout.PurchaseResult;
 import com.naranya.npay.npaydemo.R;
 import com.naranya.npay.npaydemo.models.ItemSingle;
 import com.naranya.npay.purchases.PurchaseType;
@@ -25,17 +26,8 @@ import java.util.List;
 import cz.msebera.android.httpclient.Header;
 
 /**
- * Created by Anselmo Hernández Bazaldúa. on 8/9/16.
- * ----------------------------------------------------------
- * Additional Information
- * ----------------------------------------------------------
  * Company name: Naranya Corp,
- * Company email: anselmo.hernandez@naranya.com,
- * Personal email: chemo.baza@gmail.com,
- * Phone: +520448119163771,
- * Skype: chemo.baza,
- * ----------------------------------------------------------
- * Happy Coding :)
+ * Company email: npaydevs@naranya.com
  */
 public class SingleBillingAdapter extends RecyclerView.Adapter<SingleBillingAdapter.ViewHolder> implements PopupMenu.OnMenuItemClickListener {
     private Activity context;
@@ -138,12 +130,13 @@ public class SingleBillingAdapter extends RecyclerView.Adapter<SingleBillingAdap
                 if( items.get(position).getType() == PurchaseType.CONSUMABLE ) {
                     new NPay.NPayBuilder().purchase(context, items.get(position).getSku(), PurchaseType.CONSUMABLE, new OnCheckout() {
                         @Override
-                        public void onCheckoutResponse(NPayCheckoutResponse nPayCheckoutResponse, String jsonResponse) {
-
-                        }
+                        public void onCheckoutResponse(NPayCheckoutResponse nPayCheckoutResponse, String jsonResponse) {}
 
                         @Override
                         public void onDialogCancel() {}
+
+                        @Override
+                        public void onDialogPurchaseCompleted(PurchaseResult purchaseResult) {}
 
                         @Override
                         public void onDialogAccept() {}
@@ -156,12 +149,13 @@ public class SingleBillingAdapter extends RecyclerView.Adapter<SingleBillingAdap
                 } else if( items.get(position).getType() == PurchaseType.NO_CONSUMABLE ) {
                     new NPay.NPayBuilder().purchase(context, items.get(position).getSku(), PurchaseType.NO_CONSUMABLE, new OnCheckout() {
                         @Override
-                        public void onCheckoutResponse(NPayCheckoutResponse nPayCheckoutResponse, String jsonResponse) {
-
-                        }
+                        public void onCheckoutResponse(NPayCheckoutResponse nPayCheckoutResponse, String jsonResponse) {}
 
                         @Override
                         public void onDialogCancel() {}
+
+                        @Override
+                        public void onDialogPurchaseCompleted(PurchaseResult purchaseResult) {}
 
                         @Override
                         public void onDialogAccept() {}
